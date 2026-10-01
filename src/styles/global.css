@@ -1,0 +1,15 @@
+html {
+  background-color: #1e1e24;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  line-height: 1.6;
+  color: #f0f0f0;
+  font-size: 16px;
+  font-family: "Exo 2", Exo, Roboto, sans-serif;
+}
