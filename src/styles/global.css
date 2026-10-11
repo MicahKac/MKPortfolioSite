@@ -113,7 +113,7 @@ h1 {
     font-size: max(1em, 25px);
     font-weight: 500;
     height: 100%;
-    padding-right: 1.5ch;
+    padding-right: 0.5ch;
     margin-right: auto;
     margin-left: 0;
     width: fit-content;
@@ -204,5 +204,6 @@ h1 {
     #home-button {
         height: 50%;
         padding-top: 1.5%;
+        padding-right: 5ch;
     }
 }
