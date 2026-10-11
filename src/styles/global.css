@@ -37,8 +37,9 @@ h1 {
 
 .container{
     background-color: var(--bg-color);
-    height: 100vh;
+    height: fit-content;
     width: 100vw;
+    display: unset;
 }
 
 #nav-bg{
@@ -50,13 +51,14 @@ h1 {
     padding: 0;
     padding-left: 4%;
     padding-right: 2%;
-    position: sticky;
 }
 
-.navigation-bar{
+div.navigation-bar{
     display: flex;
     flex-wrap: wrap;
     font-size: inherit;
+    position: sticky;
+    top: 0px;
 }
 
 .navigation-bar ul{
