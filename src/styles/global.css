@@ -38,7 +38,7 @@ h1 {
 .container{
     background-color: var(--bg-color);
     height: 100vh;
-    width: 100%;
+    width: 100vw;
 }
 
 #nav-bg{
@@ -48,6 +48,8 @@ h1 {
     font-size: 4vw;
     margin: 0;
     padding: 0;
+    padding-left: 4%;
+    padding-right: 2%;
     position: sticky;
 }
 
@@ -76,7 +78,7 @@ h1 {
     top: 0;
     width: fit-content;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -87,10 +89,11 @@ h1 {
 
 .navigation-bar ul li a{
     font-size: max(.55em, 15px);
-    font-family: audiowide;
-    font-weight: 400;
+    font-family: Orbitron;
+    font-weight: 700;
     text-transform: capitalize;
-    margin-right: 1ch;
+    margin: 0;
+    margin-right: 1.4ch;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,20 +101,77 @@ h1 {
     height: fit-content;
 }
 
+.navigation-bar a{
+    z-index: 2;
+}
+
 #home-button{
     display: inline-flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    font-family: orbitron;
-    font-size: max(.9em, 25px);
-    font-weight: 900;
+    font-family: Audiowide;
+    font-size: max(1em, 25px);
+    font-weight: 500;
     height: 100%;
-    padding-right: 2ch;
+    padding-right: 1.5ch;
     margin-right: auto;
-    margin-left: 1ch;
+    margin-left: 0;
     width: fit-content;
     flex-shrink: 0;
     white-space: nowrap;
+}
+
+.nav-accent{
+    background-color: var(--secondary-color);
+    font-size: max(.55em, 15px);
+    height: .9em;
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+    display: inline-block;
+}
+
+#home-accent{
+    background-color: var(--primary-color);
+    font-size: max(1em, 25px);
+    width: 7.95ch;
+    height: .8em;
+    margin-left: -.3ch;
+    margin-bottom: -.45ch;
+}
+
+#projects-accent{
+    width: 50px;
+    width: calc(4.65em*1.12);
+    margin-bottom: -.9em;
+    margin-left: calc(4.65em*-0.06);
+
+}
+
+#photos-accent{
+    width: 50px;
+    width: calc(3.9em*1.12);
+    margin-bottom: -.9em;
+    margin-left: calc(3.9em*-0.06);
+
+}
+
+#about-accent{
+    width: 50px;
+    width: calc(3.3em*1.12);
+    margin-bottom: -.9em;
+    margin-left: calc(3.3em*-0.06);
+
+}
+
+#contact-accent{
+    width: 50px;
+    width: calc(4.4em*1.12);
+    margin-bottom: -.9em;
+    margin-left: calc(4.4em*-0.06);
+
 }
 
 #nav-spacer{
@@ -123,7 +183,7 @@ h1 {
 
 
 
-@media screen and (max-width: 635px) {
+@media screen and (max-width: 676px) {
     .navigation-bar ul{
         flex-direction: row;
         justify-content: space-around;
@@ -136,10 +196,6 @@ h1 {
         height: 100%;
     }
 
-    .navigation-bar ul li a {
-        margin-left: 1.5ch;
-        margin-right: 0;
-    }
 
     #nav-bg {
         height: max(20vw);
