@@ -35,6 +35,18 @@ h1 {
   margin: 0;
 }
 
+h6 {
+    font-family: "Exo 2";
+    font-size: 1rem;
+    margin-block: 0;
+    margin-inline: 0;
+    font-weight: 600;
+    text-align: left;
+    position: relative;
+    left: 10vw;
+    bottom: 5vw;
+}
+
 .container{
     background-color: var(--bg-color);
     height: fit-content;
