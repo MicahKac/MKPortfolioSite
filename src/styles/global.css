@@ -44,15 +44,17 @@ h1 {
 #nav-bg{
     background-color: var(--contrast-color);
     width: 100vw;
-    height: 8rem;
+    height: max(10vw, 50px);
+    font-size: 4vw;
     margin: 0;
     padding: 0;
+    position: sticky;
 }
 
 .navigation-bar{
     display: flex;
     flex-wrap: wrap;
-    position: sticky;
+    font-size: inherit;
 }
 
 .navigation-bar ul{
@@ -66,6 +68,7 @@ h1 {
     height: 100%;
     width: auto;
     flex-shrink: 0;
+    font-size: inherit;
 }
 
 .navigation-bar ul li{
@@ -83,11 +86,11 @@ h1 {
 }
 
 .navigation-bar ul li a{
-    font-size: 2.0rem;
+    font-size: max(.55em, 15px);
     font-family: audiowide;
     font-weight: 400;
     text-transform: capitalize;
-    margin: 2rem;
+    margin-right: 1ch;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,23 +103,50 @@ h1 {
     justify-content: center;
     align-items: center;
     font-family: orbitron;
-    font-size: 3.5rem;
+    font-size: max(.9em, 25px);
     font-weight: 900;
     height: 100%;
+    padding-right: 2ch;
     margin-right: auto;
     margin-left: 1ch;
     width: fit-content;
     flex-shrink: 0;
+    white-space: nowrap;
 }
 
-@media screen and (max-width: 1615px) {
-    #nav-bg{
-        height: 16rem;
-    }
+#nav-spacer{
+    width: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+
+}
+
+
+
+@media screen and (max-width: 635px) {
     .navigation-bar ul{
-        height: 50%;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 40%;
+        padding-bottom: 1%;
     }
-    #home-button{
+    .navigation-bar ul li {
+        background-color: var(--contrast-color);
+        height: 100%;
+    }
+
+    .navigation-bar ul li a {
+        margin-left: 1.5ch;
+        margin-right: 0;
+    }
+
+    #nav-bg {
+        height: max(20vw);
+    }
+
+    #home-button {
         height: 50%;
+        padding-top: 1.5%;
     }
 }
