@@ -45,7 +45,7 @@ h6 {
     width: 100%;
     position: relative;
     left: 0;
-    bottom: 3vw; 
+    bottom: 0; 
 }
 
 .container{
@@ -211,10 +211,6 @@ div.navigation-bar{
         height: 100%;
     }
 
-    h6{
-        font-size: .5rem;
-    }
-
     #nav-bg {
         height: max(20vw);
     }
@@ -224,4 +220,14 @@ div.navigation-bar{
         padding-top: 1.5%;
         padding-right: 5ch;
     }
+    
+    h6{
+        font-size: .5rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+
+
 }

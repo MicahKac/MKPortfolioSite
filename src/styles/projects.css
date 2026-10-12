@@ -1,13 +1,13 @@
 #projects-content{
     display: flex;
     justify-content: center;
-    padding: min(10vw, 170px);
+    padding: min(15vw, 170px);
     padding-top: 5vw;
     margin: auto;
     margin-top: 0;
     max-width: 1750px;
     flex-wrap: wrap;
-    gap: min(4vw, 60px);
+    gap: 1vw;
     font-size: min(max(2.8vw, 0px),48px);
     flex-shrink: 0;
 }
@@ -25,18 +25,25 @@
     padding: 1%
 }
 
+#projects-link-container div{
+    display: flex;
+    min-width: 50%;
+}
+
 #projects-link-container p{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 25%;
+    min-width: 50%;
     font-size: 1em;
     margin: 0;
 }
 
+
+
 #projects-link-container p a{
     font-family: "WDXL Lubrifont TC";
-    font-size: .8em;
+    font-size: .75em;
     text-transform: uppercase;
     color: var(--bg-color);
     background-color: var(--contrast-color);
@@ -63,8 +70,17 @@
 }
 
 
-@media screen and (max-width: 676px){
+@media screen and (max-width: 500px){
     #projects-content{
-        padding: 3vw;
+        padding: 8vw;
+    }
+
+    #projects-link-container div{
+        width: 100%;
+    }
+
+    #projects-link-container p a{
+        min-height: 10vw;
+        font-size: 1.5em;
     }
 }

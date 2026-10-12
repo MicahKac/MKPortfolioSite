@@ -1,7 +1,7 @@
 #homepage-content{
     display: flex;
     justify-content: center;
-    padding: min(10vw, 170px);
+    padding: min(15vw, 170px);
     padding-top: 5vw;
     margin: auto;
     margin-top: 0;
@@ -23,7 +23,7 @@
     justify-content: space-between;
     gap: 5%;
     flex-wrap: wrap;
-    width: min(80%, 1200px);
+    width: min(100%, 1200px);
     flex-shrink: 0;
     font-size: inherit;
 }
@@ -58,7 +58,7 @@
     font-size: inherit;
     gap: 0;
     flex-wrap: wrap;
-    width: min(80%, 1200px);
+    width: min(100%, 1200px);
 }
 
 .cards{
@@ -126,7 +126,7 @@
     background-color: var(--neutral-color);
 }
 
-@media screen and (max-width: 676px){
+@media screen and (max-width: 500px){
     #projects-card{
         min-width: 100%;
     }
@@ -136,7 +136,7 @@
     }
 
     #homepage-content{
-        padding: 3vw;
+        padding: 8vw;
     }
 
     #intro-paragraph p{
