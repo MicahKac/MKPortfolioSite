@@ -42,7 +42,7 @@ h6 {
     margin-inline: 0;
     font-weight: 600;
     text-align: left;
-    width: 80%;
+    width: 100%;
     position: relative;
     left: 0;
     bottom: 3vw; 
@@ -211,6 +211,9 @@ div.navigation-bar{
         height: 100%;
     }
 
+    h6{
+        font-size: .5rem;
+    }
 
     #nav-bg {
         height: max(20vw);

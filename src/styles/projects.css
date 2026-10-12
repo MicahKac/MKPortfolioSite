@@ -1,0 +1,70 @@
+#projects-content{
+    display: flex;
+    justify-content: center;
+    padding: min(10vw, 170px);
+    padding-top: 5vw;
+    margin: auto;
+    margin-top: 0;
+    max-width: 1750px;
+    flex-wrap: wrap;
+    gap: min(4vw, 60px);
+    font-size: min(max(2.8vw, 0px),48px);
+    flex-shrink: 0;
+}
+
+#projects-link-container{
+    border: .3em;
+    border-color: var(--contrast-color);
+    border-style: solid;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    font-size: 2.5vw;
+    padding: 1%
+}
+
+#projects-link-container p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 25%;
+    font-size: 1em;
+    margin: 0;
+}
+
+#projects-link-container p a{
+    font-family: "WDXL Lubrifont TC";
+    font-size: .8em;
+    text-transform: uppercase;
+    color: var(--bg-color);
+    background-color: var(--contrast-color);
+    text-decoration: none;
+    margin: .25em;
+    padding: .5em;
+    width: 100%;
+    min-height: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#projects-link-container .row1{
+    background-color: var(--primary-color);
+}
+
+#projects-link-container .row2{
+    background-color: var(--secondary-color);
+}
+
+#projects-link-container .row3{
+    background-color: var(--tertiary-color);
+}
+
+
+@media screen and (max-width: 676px){
+    #projects-content{
+        padding: 3vw;
+    }
+}

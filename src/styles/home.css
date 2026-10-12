@@ -134,4 +134,12 @@
     #photos-card{
         min-width: 100%;
     }
+
+    #homepage-content{
+        padding: 3vw;
+    }
+
+    #intro-paragraph p{
+        font-size: 1.2em;
+    }
 }
