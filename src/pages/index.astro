@@ -1,25 +1,15 @@
 ---
-import Header from "../components/Header.astro";
-import '../styles/home.css';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import '../styles/home.css'
 import { Image } from 'astro:assets';
 import Introimage from '../assets/Micah_0035.jpg';
 import Projectsimage from '../assets/Projectbanner.jpg'
 import Photosimage from '../assets/IMG_5099adj.jpg'
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Micah Kacmarynski</title>
+<title>Micah Kacmarynski</title>
 
-	</head>
-	<body>
-		<div class="container">
-			<Header />
+<BaseLayout>
 			<div id="homepage-content">
 				<div id="intro-container">	
 					<Image class="border" id="intro-image" src={Introimage} alt="A man" />
@@ -44,10 +34,6 @@ You can also find some of my other information here.</p>
 					<a href="/contact" id="contact-card" class="cards">
 						<h2>Contact</h2>
 					</a>
-					<h6>© 2026 Micah Kacmarynski. All Rights Reserved.</h6>
-				</div>
-				
+				</div>			
 			</div>	
-		</div>
-	</body>
-</html>
+</BaseLayout>
